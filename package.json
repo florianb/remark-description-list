@@ -1,0 +1,16 @@
+{
+	"name": "remark-description-list",
+  "main": "index.js",
+	"scripts": {
+		"test": "ava"
+	},
+	"devDependencies": {
+		"ava": "^2.3.0"
+	},
+	"dependencies": {
+		"remark": "^11.0.1"
+	},
+  "xo": {
+    "semicolon": false
+  }
+}
