@@ -14,7 +14,7 @@
     "semicolon": false
   },
   "description": "[**Remark**][remark]-plugin to generate description lists.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "directories": {
     "test": "test"
   },
