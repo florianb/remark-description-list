@@ -1,16 +1,35 @@
 {
-	"name": "remark-description-list",
+  "name": "remark-description-list",
   "main": "index.js",
-	"scripts": {
-		"test": "ava"
-	},
-	"devDependencies": {
-		"ava": "^2.3.0"
-	},
-	"dependencies": {
-		"remark": "^11.0.1"
-	},
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^2.3.0"
+  },
+  "dependencies": {
+    "remark": "^11.0.1"
+  },
   "xo": {
     "semicolon": false
-  }
+  },
+  "description": "[**Remark**][remark]-plugin to generate description lists.",
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianb/remark-description-list.git"
+  },
+  "keywords": [
+    "remark",
+    "plugin"
+  ],
+  "author": "florian.breisch@mindkeeper.solutions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/florianb/remark-description-list/issues"
+  },
+  "homepage": "https://github.com/florianb/remark-description-list#readme"
 }

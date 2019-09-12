@@ -66,3 +66,44 @@ test('plugin should modify ast', t => {
 	t.deepEqual(tree, descriptionList()(fixture), 'Plugin modifies tree as expected')
 })
 
+test('plugin should transform nested dl', t => {
+	const fixture = {
+		children: [
+			{
+				type: 'paragraph',
+				children: [
+					{
+						type: 'text',
+						value: 'd\n: L1\nb\n: L2'
+					}
+				]
+			}
+		]
+	}
+
+	const tree = {
+		children: [
+			{
+				type: 'paragraph',
+				children: [
+					{type: 'html', value: '<dl>'},
+					{type: 'html', value: '<dt>'},
+					{type: 'text', value: 'd'},
+					{type: 'html', value: '</dt>'},
+					{type: 'html', value: '<dd>'},
+					{type: 'text', value: 'L1'},
+					{type: 'html', value: '</dd>'},
+					{type: 'html', value: '<dt>'},
+					{type: 'text', value: 'b'},
+					{type: 'html', value: '</dt>'},
+					{type: 'html', value: '<dd>'},
+					{type: 'text', value: 'L2'},
+					{type: 'html', value: '</dd>'},
+					{type: 'html', value: '</dl>'}
+				]
+			}
+		]
+	}
+
+	t.deepEqual(tree, descriptionList()(fixture), 'Plugin modifies tree as expected')
+})
