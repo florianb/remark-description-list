@@ -48,7 +48,7 @@ Any feedback is more than welcome.
 
 ## License
 
-[MIT][/LICENSE] (c) [Florian Breisch][https://github.com/florianb]
+[MIT](/LICENSE) (c) [Florian Breisch](https://github.com/florianb)
 
 
 
