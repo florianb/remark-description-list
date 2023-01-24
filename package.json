@@ -8,7 +8,7 @@
     "ava": "^2.3.0"
   },
   "dependencies": {
-    "remark": "^11.0.1"
+    "remark": "^14.0.2"
   },
   "xo": {
     "semicolon": false
